@@ -1,6 +1,6 @@
 
 
-import static io.restassured.RestAssured.given;
+/*import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -29,22 +29,22 @@ public class ResourcesTest {
 
     @Inject
     ResourcesOlli resources;
-    /**
+    *//**
 	 * Implementa una clase Resources que
 	 * añada una API REST a nuestra app.
 	 * Injecta el servicio en Resources.
-     */
+     *//*
 
     @Test
     public void test_injeccion() {
         Assertions.assertThat(resources.service).isNotNull();
     }
 
-    /**
+    *//**
      * En el endpoint /wellcome
      * recibimos un TEXT con el mensaje
      * "Wellcome Ollivanders!""
-     */
+     *//*
 
     @Test
     public void test_wellcome() {
@@ -57,12 +57,12 @@ public class ResourcesTest {
             .body(is("Wellcome Ollivanders!"));
     }
 
-    /**
+    *//**
      * La peticion 
      *      /usuaria/<nombre>
      * ha de retornar el nombre y la destreza de la persona 
 	 * indicada de la base de datos.
-     */
+     *//*
     @Test
     public void test_get_persona() {
 
@@ -86,14 +86,14 @@ public class ResourcesTest {
             .statusCode(404);
 	}
 
-    /**
+    *//**
      * Ordena un pedido empleando el método POST en la url
      *      /ordena
      * Los parametros necesarios son "usuaria" con el nombre de la persona
 	 * e "item" con el nombre del objeto, en un JSON.
      * La peticion ha de retornar la orden de pedido JSON
      * y status code 201 si ha sido generada y 404 en caso contrario.
-     */
+     *//*
 	@Test
     @Transactional
     public void test_post_ok() {
@@ -139,11 +139,11 @@ public class ResourcesTest {
             .statusCode(404);
     }
 
-    /**
+    *//**
      * Obten los pedidos de una usuaria mediante
      * una peticion GET en el endpoint:
      *      /pedidos/{usuaria}
-     */
+     *//*
 
     @Test
     public void test_pedidos_usuaria() {             
@@ -160,12 +160,12 @@ public class ResourcesTest {
         Assertions.assertThat(pedidos.get(0).get("item")).hasFieldOrPropertyWithValue("nombre", "+5 Dexterity Vest");
     }
 
-     /**
+     *//**
      * La peticion 
      *      /item/<nombre>
      * ha de retornar el nombre y la calidad
      * del Item indicado de la base de datos.
-     */
+     *//*
     @Test
     public void test_get_item() {
 
@@ -188,4 +188,4 @@ public class ResourcesTest {
         .then()
             .statusCode(404);
 	}
-}
+}*/
