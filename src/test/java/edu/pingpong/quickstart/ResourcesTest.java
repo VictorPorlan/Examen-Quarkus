@@ -1,6 +1,6 @@
+package edu.pingpong.quickstart;
 
-
-/*import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -29,23 +29,23 @@ public class ResourcesTest {
 
     @Inject
     ResourcesOlli resources;
-    *//**
+    /**
 	 * Implementa una clase Resources que
 	 * añada una API REST a nuestra app.
 	 * Injecta el servicio en Resources.
-     *//*
+     */
 
     @Test
     public void test_injeccion() {
         Assertions.assertThat(resources.service).isNotNull();
     }
 
-    *//**
+    /**
      * En el endpoint /wellcome
      * recibimos un TEXT con el mensaje
      * "Wellcome Ollivanders!""
-     *//*
-
+     */
+/*
     @Test
     public void test_wellcome() {
         given()
@@ -188,4 +188,5 @@ public class ResourcesTest {
         .then()
             .statusCode(404);
 	}
-}*/
+	*/
+}
