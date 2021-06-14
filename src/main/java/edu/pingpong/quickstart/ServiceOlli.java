@@ -30,4 +30,20 @@ public class ServiceOlli {
                 ? Orden.find("ord_user", nombre).list()
                 : Collections.emptyList();
     }
+
+    public Orden comanda(String nombreUsuario, String nombreItem){
+        Optional<Usuaria> usuaria = Usuaria.find("user_nom", nombreUsuario).firstResultOptional();
+        Optional<Item> item = Item.find("item_nom", nombreItem).firstResultOptional();
+
+        if(usuaria.isPresent() && item.isPresent()){
+            Orden orden = new Orden(usuaria.get(), item.get());
+            orden.persist();
+            return orden;
+        }
+        else{
+            return new Orden(new Usuaria("", 0), new Item("", 0, ""));
+        }
+
+
+    }
 }

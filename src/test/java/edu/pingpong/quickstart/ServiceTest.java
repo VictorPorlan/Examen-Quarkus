@@ -179,7 +179,7 @@ public class ServiceTest {
 	 * Guarda esta orden en su tabla en la base de datos.
 	 * 
      * El metodo devuelve la orden de tipo Orden creada.
-	 *//*
+	 */
 
 	@Test
 	@Transactional
@@ -201,7 +201,7 @@ public class ServiceTest {
 		em.find(Orden.class, pedidos.get(1).getId()).delete();
 	}
 
-	*/
+
 /**
      * Implementa el metodo comanda del servicio
 	 * para que NO permita generar pedidos de productos
