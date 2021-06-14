@@ -143,29 +143,29 @@ public class ResourcesTest {
      * Obten los pedidos de una usuaria mediante
      * una peticion GET en el endpoint:
      *      /pedidos/{usuaria}
-     *//*
+     */
 
     @Test
-    public void test_pedidos_usuaria() {             
+    public void test_pedidos_usuaria() {
 
-        List<Map<String, Object>> pedidos = 
+        List<Map<String, Object>> pedidos =
             given()
                 .contentType(ContentType.JSON)
             .when()
                 .get("/pedidos/{usuaria}", "Hermione")
                 .as(new TypeRef<List<Map<String, Object>>>() {});
-        
+
         Assertions.assertThat(pedidos).hasSize(1);
         Assertions.assertThat(pedidos.get(0).get("user")).hasFieldOrPropertyWithValue("nombre", "Hermione");
         Assertions.assertThat(pedidos.get(0).get("item")).hasFieldOrPropertyWithValue("nombre", "+5 Dexterity Vest");
     }
 
-     *//**
+     /**
      * La peticion 
      *      /item/<nombre>
      * ha de retornar el nombre y la calidad
      * del Item indicado de la base de datos.
-     *//*
+     */
     @Test
     public void test_get_item() {
 
@@ -188,5 +188,4 @@ public class ResourcesTest {
         .then()
             .statusCode(404);
 	}
-	*/
 }
