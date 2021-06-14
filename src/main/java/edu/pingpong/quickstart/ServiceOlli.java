@@ -35,7 +35,7 @@ public class ServiceOlli {
         Optional<Usuaria> usuaria = Usuaria.find("user_nom", nombreUsuario).firstResultOptional();
         Optional<Item> item = Item.find("item_nom", nombreItem).firstResultOptional();
 
-        if(usuaria.isPresent() && item.isPresent()){
+        if(usuaria.isPresent() && item.isPresent() && (item.get().quality < usuaria.get().destreza)){
             Orden orden = new Orden(usuaria.get(), item.get());
             orden.persist();
             return orden;

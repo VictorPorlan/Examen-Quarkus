@@ -249,7 +249,7 @@ public class ServiceTest {
 	 * NO permita generar pedidos de productos
 	 * cuando la destreza de la usuaria sea menor
 	 * que la calidad del Item.
-	 *//*
+	 */
 
 	@Test
 	public void test_comanda_item_sin_pro() {
@@ -261,7 +261,7 @@ public class ServiceTest {
         Assertions.assertThat(pedido).isNull();
 	}
 
-	*/
+
 /**
 	 * Implementa el metodo comandaMultiple para que una usuaria
 	 * pueda ordenar más de un Item a la vez.
