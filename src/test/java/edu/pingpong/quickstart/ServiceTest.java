@@ -227,7 +227,7 @@ public class ServiceTest {
      * Implementa el metodo comanda del servicio
 	 * para que NO permita generar pedidos de productos
 	 * si no existe el item en la base de datos.
-	 *//*
+	 */
 
 	@Test
 	public void test_comanda_no_item() {
@@ -243,7 +243,7 @@ public class ServiceTest {
         Assertions.assertThat(pedido).isNull();
 	}
 
-	*/
+
 /**
 	 * Modifica el metodo comanda para que 
 	 * NO permita generar pedidos de productos
