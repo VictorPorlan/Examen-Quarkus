@@ -46,13 +46,12 @@ public class ServiceTest {
 		Assertions.assertThat(elixir.getQuality()).isEqualTo(7);
         Assertions.assertThat(elixir.getTipo()).isEqualTo("NormalItem");
     }
-/*
 
-	*/
+
 /**
 	 * Completa la definicion y el mapping
 	 * de la clase Usuaria a la tabla t_users
-	 *//*
+	 */
 
 	@Test
 	public void test_mapping_usuaria() {
@@ -62,12 +61,12 @@ public class ServiceTest {
         Assertions.assertThat(elfo.getDestreza()).isEqualTo(15);
 	}
 
-    */
+
 /**
 	 * Completa la definicion y el mapping
 	 * de la clase Orden a la tabla t_ordenes
 	 * El id de esta clase ha de seguir una estrategia Identity
-	 *//*
+	 */
 
 	@Test 
 	public void test_mapping_orden() {
@@ -77,7 +76,6 @@ public class ServiceTest {
 		Assertions.assertThat(pedido.getItem().getNombre()).isEqualToIgnoringCase("Elixir of the Mongoose");
 	}
 
-	*/
 /** SERVICIO *//*
 
 
