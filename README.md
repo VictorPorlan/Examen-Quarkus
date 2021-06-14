@@ -1,3 +1,15 @@
+EXAMEN
+==========
+Para crear una imagen de docker de esta Api ejecuta esos comandos en orden
+```
+mvn clean package -Dmaven.test.skip=true
+```
+```
+docker build -f src/main/docker/Dockerfile.jvm -t quarkus/api-examenjvm .
+```
+```
+docker run -i --rm -p 8080:8080 quarkus/api-espadas-jvm
+```
 INSTRUCCIONES
 =============
 
