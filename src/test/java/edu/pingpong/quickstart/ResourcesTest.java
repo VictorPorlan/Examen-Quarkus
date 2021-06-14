@@ -62,7 +62,7 @@ public class ResourcesTest {
      *      /usuaria/<nombre>
      * ha de retornar el nombre y la destreza de la persona 
 	 * indicada de la base de datos.
-     *//*
+     */
     @Test
     public void test_get_persona() {
 
@@ -86,14 +86,14 @@ public class ResourcesTest {
             .statusCode(404);
 	}
 
-    *//**
+    /**
      * Ordena un pedido empleando el método POST en la url
      *      /ordena
      * Los parametros necesarios son "usuaria" con el nombre de la persona
 	 * e "item" con el nombre del objeto, en un JSON.
      * La peticion ha de retornar la orden de pedido JSON
      * y status code 201 si ha sido generada y 404 en caso contrario.
-     *//*
+     */
 	@Test
     @Transactional
     public void test_post_ok() {
@@ -139,7 +139,7 @@ public class ResourcesTest {
             .statusCode(404);
     }
 
-    *//**
+    /**
      * Obten los pedidos de una usuaria mediante
      * una peticion GET en el endpoint:
      *      /pedidos/{usuaria}
