@@ -97,7 +97,7 @@ public class ServiceTest {
 	 * Devuelve la usuaria con el nombre indicado, si existe.
 	 * Si no existe, devuelve un objeto usuaria con sus propiedades
      * y valores como se indica en los casos test.
-	 *//*
+	 */
 
 	@Test
 	public void test_carga_usuaria() {
@@ -117,7 +117,7 @@ public class ServiceTest {
         Assertions.assertThat(profesor.getDestreza()).isZero();
 	}
 
-    */
+
 /**
 	 * Implementa el metodo cargaItem del servicio.
 	 * Devuelve el item con el nombre indicado, si existe.
