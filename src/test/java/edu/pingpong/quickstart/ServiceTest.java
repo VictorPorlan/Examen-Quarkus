@@ -149,7 +149,7 @@ public class ServiceTest {
 	 * Devuelve una lista con los pedidos de la usuaria 
 	 * con el nombre indicado, si existe.
      * Si no existe, devuelve una lista vacía.
-	 *//*
+	 */
 
 
     @Test
@@ -170,7 +170,7 @@ public class ServiceTest {
 		Assertions.assertThat(ordenes).isEmpty();
 	}
 
-    */
+
 /**
      * Implementa el metodo "comanda" del servicio
 	 * que permite a una usuaria pedir un item.
