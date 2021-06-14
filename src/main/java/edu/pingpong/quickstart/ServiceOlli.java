@@ -3,6 +3,7 @@ package edu.pingpong.quickstart;
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.core.Response;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
@@ -43,5 +44,21 @@ public class ServiceOlli {
         else{
             return null;
         }
+    }
+    public List<Orden> comandaMultiple(String nombreUsuario, List<String> items){
+        List<Orden> ordenes = new ArrayList<Orden>();
+        Optional<Usuaria> usuaria = Usuaria.find("user_nom", nombreUsuario).firstResultOptional();
+        if(usuaria.isPresent()){
+            for (int i = 0; i < items.size(); i++){
+                Orden orden;
+                Optional<Item> item = Item.find("item_nom",items.get(i)).firstResultOptional();
+                if (item.isPresent()) {
+                    orden = new Orden(usuaria.get(), item.get());
+                    orden.persist();
+                    ordenes.add(orden);
+                }
+            }
+        }
+        return ordenes;
     }
 }
