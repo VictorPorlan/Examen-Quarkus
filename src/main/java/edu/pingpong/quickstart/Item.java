@@ -12,7 +12,6 @@ import javax.persistence.Table;
 @Table(name="t_items")
 public class Item extends PanacheEntityBase{
     @Id
-
     @Column(name="item_nom")
     public String nombre;
 

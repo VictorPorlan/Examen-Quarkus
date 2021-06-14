@@ -40,10 +40,9 @@ public class ServiceOlli {
             orden.persist();
             return orden;
         }
+
         else{
-            return new Orden(new Usuaria("", 0), new Item("", 0, ""));
+            return null;
         }
-
-
     }
 }

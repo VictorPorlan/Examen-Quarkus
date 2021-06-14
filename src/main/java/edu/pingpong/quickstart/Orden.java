@@ -8,10 +8,10 @@ import javax.persistence.*;
 @Table(name = "t_ordenes")
 public class Orden extends PanacheEntityBase {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="ord_id")
     public Long id;
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="ord_user")
     public Usuaria user;
     @OneToOne
