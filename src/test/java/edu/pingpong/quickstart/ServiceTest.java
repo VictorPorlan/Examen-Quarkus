@@ -76,14 +76,14 @@ public class ServiceTest {
 		Assertions.assertThat(pedido.getItem().getNombre()).isEqualToIgnoringCase("Elixir of the Mongoose");
 	}
 
-/** SERVICIO *//*
+/** SERVICIO */
 
 
-    */
+
 /**
 	 * Crea una clase llamada ServiceItem e indica
 	 * que es una dependencia Quarkus 
-	 *//*
+	 */
 
 
     @Test
@@ -91,7 +91,7 @@ public class ServiceTest {
 		Assertions.assertThat(servicio).isNotNull();
 	}
 
-	*/
+
 /**
 	 * Implementa el metodo cargaUsuaria del servicio.
 	 * Devuelve la usuaria con el nombre indicado, si existe.
