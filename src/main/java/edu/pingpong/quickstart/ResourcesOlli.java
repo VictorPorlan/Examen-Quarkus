@@ -7,14 +7,15 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/examen")
+@Path("/wellcome")
 public class ResourcesOlli {
 
     @Inject
     ServiceOlli service;
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello RESTEasy";
+        return "Wellcome Ollivanders!";
     }
 }

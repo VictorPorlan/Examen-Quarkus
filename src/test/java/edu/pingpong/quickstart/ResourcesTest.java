@@ -45,7 +45,7 @@ public class ResourcesTest {
      * recibimos un TEXT con el mensaje
      * "Wellcome Ollivanders!""
      */
-/*
+
     @Test
     public void test_wellcome() {
         given()
@@ -57,7 +57,7 @@ public class ResourcesTest {
             .body(is("Wellcome Ollivanders!"));
     }
 
-    *//**
+    /**
      * La peticion 
      *      /usuaria/<nombre>
      * ha de retornar el nombre y la destreza de la persona 
