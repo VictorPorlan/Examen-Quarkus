@@ -123,7 +123,7 @@ public class ServiceTest {
 	 * Devuelve el item con el nombre indicado, si existe.
      * Si no existe, devuelve un objeto usuaria con sus propiedades
      * y valores como se indica en los casos test.
-	 *//*
+	 */
 
 
     @Test
@@ -144,7 +144,6 @@ public class ServiceTest {
 		Assertions.assertThat(item.getQuality()).isZero();
 	}
 
-	*/
 /**
 	 * Implementa el metodo cargaOrden del servicio.
 	 * Devuelve una lista con los pedidos de la usuaria 
