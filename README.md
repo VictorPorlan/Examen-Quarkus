@@ -10,6 +10,11 @@ docker build -f src/main/docker/Dockerfile.jvm -t quarkus/api-examenjvm .
 ```
 docker run -i --rm -p 8080:8080 quarkus/api-espadas-jvm
 ```
+
+También puedes descaragarlo en dockerhub
+```
+https://hub.docker.com/repository/docker/victorporlan/examen
+```
 INSTRUCCIONES
 =============
 
